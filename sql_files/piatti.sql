@@ -1,0 +1,15 @@
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (1, 'Pizza Margherita', 6.00, 1);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (2, 'Pizza Diavola', 7.50, 1);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (3, 'Calzone Ripieno', 8.00, 1);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (4, 'Sashimi Salmone (6pz)', 12.00, 2);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (5, 'Uramaki Tiger (8pz)', 14.00, 2);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (6, 'Edamame', 4.00, 2);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (7, 'BBQ Burger', 10.00, 3);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (8, 'Bacon Cheese Burger', 11.50, 3);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (9, 'Patatine Fritte', 4.00, 3);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (10, 'Chicken Tikka Masala', 13.00, 4);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (11, 'Naan al Formaggio', 3.50, 4);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (12, 'Tacos di Manzo', 9.00, 5);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (13, 'Burrito Piccante', 10.00, 5);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (14, 'Pizza Quattro Formaggi', 8.50, 6);
+INSERT INTO piatti (piatto_id, nome, prezzo, ristorante_id) VALUES (15, 'Pizza Capricciosa', 9.00, 6);

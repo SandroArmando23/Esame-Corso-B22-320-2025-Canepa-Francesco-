@@ -1,5 +1,4 @@
 from pydantic import BaseModel, Field
-from typing import Optional
 
 
 class DettaglioOrdineBase(BaseModel):
@@ -11,7 +10,8 @@ class DettaglioOrdineCreate(DettaglioOrdineBase):
 
 class DettaglioOrdine(DettaglioOrdineBase):
     ordine_id: int
-    #piatto: Optional[Piatto] = None
+    piatto_id: int
+    quantita: int = Field(gt=0)
 
     class Config:
         from_attributes=True
