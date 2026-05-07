@@ -11,7 +11,7 @@ router = APIRouter(prefix="/tipologie", tags=['tipologie'])
 
 @router.get("/", response_model=List[Tipologia])
 def get_lista_tipologie(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
-    return get_tipologie(skip, limit, db)
+    return get_tipologie(db, skip, limit)
 
 @router.get("/{tipologia_id}/ristoranti", response_model=List[Ristorante])
 def get_lista_ristoranti_per_tipologia(tipologia_id: int, db: Session = Depends(get_db)):

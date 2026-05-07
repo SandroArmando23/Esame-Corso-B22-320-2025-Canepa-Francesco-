@@ -1,0 +1,239 @@
+
+:root {
+  --bg-dark: #0f0f0f;
+  --bg-card: #1a1a1a;
+  --primary: #e63946;
+  --text-light: #f1f1f1;
+  --text-muted: #ebe8e8;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Nunito', sans-serif;
+}
+
+
+.navbar {
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width .3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.logo{
+  height:42px;
+  width:auto;
+}
+
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;
+
+  background-image: url("img/hero.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.hero .btn {
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.btn-primary {
+  background-color: #e63946;
+  border-color: #e63946;
+}
+
+.btn-primary:hover {
+  background-color: #d62839;
+  border-color: #d62839;
+}
+.btn-outline-light:hover {
+  background-color: var(--text-light);
+  color: var(--bg-dark);
+}
+
+
+.filtri-wrap {
+  background-color: #161616;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 1rem 0;
+}
+
+.btn-filter {
+  background: transparent;
+  border: 1px solid #444;
+  color: var(--text-muted);
+  border-radius: 100px;
+  font-size: .82rem;
+  font-weight: 600;
+  padding: .45rem 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  transition: all .18s;
+}
+
+.btn-filter img {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.restaurant-card {
+  background-color: var(--bg-card);
+  border-radius: 1rem;
+  border: none;
+  overflow: hidden;
+  transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+}
+
+.restaurant-card img {
+  height: 190px;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0,0,0,.6);
+}
+
+.restaurant-card:hover img {
+  transform: scale(1.1);
+}
+
+.restaurant-card .card-title {
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.restaurant-card .card-text {
+  color: #adb5bd;
+  font-size: .85rem;
+}
+
+.restaurant-card .card-body {
+  color: var(--text-light);
+}
+
+
+.form-label {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: var(--text-light);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #1a1a1a;
+  border-color: var(--primary);
+  color: var(--text-light);
+  box-shadow: 0 0 0 3px rgba(230,57,70,.2);
+}
+
+.form-control::placeholder { color: #666; }
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.piatti-menu { display: none; }
+.piatti-menu.show { display: block; }
+
+
+section h2 {
+  font-weight: 800;
+}
+
+
+footer {
+  font-size: 0.9rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text-light);
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    background-size: contain;
+    background-color: #000;
+    background-position: top center;
+  }
+}
+
+
+@media (max-width: 1366px) {
+  .hero {
+    background-image: url("img/hero-tablet.png");
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("img/hero-smartphone.png");
+  }
+}

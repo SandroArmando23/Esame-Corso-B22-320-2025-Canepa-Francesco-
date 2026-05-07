@@ -1,0 +1,28 @@
+<svg width="420" height="90" viewBox="0 0 420 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(10,18)">
+    <path d="M8 38H46" stroke="#E63946" stroke-width="6" stroke-linecap="round"/>
+    <path d="M2 26H24" stroke="#E63946" stroke-width="6" stroke-linecap="round"/>
+    <path d="M2 50H30" stroke="#E63946" stroke-width="6" stroke-linecap="round"/>
+
+    <path d="M54 20C54 12 47 6 39 6C31 6 24 12 24 20" stroke="#E63946" stroke-width="6" stroke-linecap="round"/>
+    <path d="M16 42H62" stroke="#E63946" stroke-width="6" stroke-linecap="round"/>
+    <path d="M20 42C20 28 28 18 39 18C50 18 58 28 58 42" stroke="#E63946" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="39" cy="6" r="5" stroke="#E63946" stroke-width="6"/>
+  </g>
+
+  <text x="95" y="58"
+        font-family="Inter, Arial, sans-serif"
+        font-size="44"
+        font-weight="700"
+        fill="#FFFFFF">
+    Tasty
+  </text>
+
+  <text x="225" y="58"
+        font-family="Inter, Arial, sans-serif"
+        font-size="44"
+        font-weight="700"
+        fill="#E63946">
+    Delivery
+  </text>
+</svg>

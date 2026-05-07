@@ -9,7 +9,7 @@ class Ordine(Base):
     __tablename__ = "ordini"
     
     ordine_id = Column(Integer, primary_key=True, index=True, auto_increment=True)
-    data_ora = Column(DateTime, default=datetime.now())   # ricorda potrebbe dare problemi a runtime se mai commenta
+    data_ora = Column(DateTime, default=datetime.now)
     stato = Column(String(50), default="In preparazione")  # ricorda di commentare che c'è solo stato di default
     
     cliente_id = Column(Integer, ForeignKey("clienti.cliente_id"), nullable=False)
